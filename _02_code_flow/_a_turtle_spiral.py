@@ -8,62 +8,30 @@ def get_random_color():
 
 # ====================== DO NOT EDIT THE CODE ABOVE ===========================
 
-times_clicked = 0
-
-
-def screen_clicked(x, y):
-    global times_clicked
-    times_clicked = times_clicked + 1
-    if times_clicked == 1:
-        times_clicked = 0
-        my_turtle.pendown()
-    else:
-        my_turtle.penup()
-
-    print(times_clicked)
-    print('You pressed: x=' + str(x) + ', y=' + str(y))
-    # if times_clicked==2:
-
-    # 6. Call the turtle .penup() method
-    my_turtle.penup()
-    my_turtle.pendown()
-    # 7. Move the turtle to a new location using .goto(x, y)
-    my_turtle.goto(x, y)
-
-
-def turtle_clicked(x, y):
-    print('turtle clicked!')
-
-    # 8. Make a for loop to run the next instructions 3 times
-    for i in range(4):
-        # 9. Make the turtle spin 360 degrees using the .right() method
-        my_turtle.right(40)
-        # 10. Use the .color() method and getRandomColor() function to change
-        # the color of the turtle,
-        # myTurtle.color(get_random_color())
-        my_turtle.color(get_random_color())
-
 
 if __name__ == '__main__':
     window = turtle.Screen()
-    window.setup(width=0.75, height=0.8, startx=0, starty=0)
+    window.bgcolor('white')
 
-    # 1. Make a new turtle
-    my_turtle = turtle.Turtle()
-    # 2. Make your turtle's shape 'turtle', .shape('turtle')
-    my_turtle.shape('turtle')
-    # 3. Set your turtle's color using .color('green') and .pencolor('blue')
-    my_turtle.color('green')
-    my_turtle.pencolor('blue')
-    # 4. Set and new width, length, and outline of our turtle
-    #    my_turtle.turtlesize(stretch_wid=10, stretch_len=10, outline=4)
-    my_turtle.turtlesize(stretch_wid=10),
-    my_turtle.turtlesize(stretch_len=10)
-    my_turtle.turtlesize(outline=10)
-    # 5. Uncomment the following line and replace 'my_turtle' with your turtle
-    my_turtle.onclick(turtle_clicked)
+    # Make a new turtle
+    turtle = turtle.Turtle()
+    # This code sets our shape to a turtle
 
-    # ===================== DO NOT EDIT THE CODE BELOW ============================
-    window.onclick(screen_clicked)
+    # Set your turtle's speed (0=fastest, 1=slowest, 10=faster)
+
+    # Set your turtle's color using .color('green')
+
+    # Use a loop to repeat a the code below 50 times
+
+        # Set the turtle color to a random color
+
+        # Move the turtle (5*i) pixels. 'i' is the loop variable
+
+        # Turn the turtle (360/7) degrees to the right
+
+        # Change the turtle width to 'i' (the loop variable)
+
+        # Check the pattern against the picture in the recipe. If it matches, you are done!
+
+# ===================== DO NOT EDIT THE CODE BELOW ============================
     turtle.done()
-
