@@ -8,26 +8,38 @@ def get_random_color():
 
 # ====================== DO NOT EDIT THE CODE ABOVE ===========================
 
-
+times_clicked = 0
 def screen_clicked(x, y):
-    print('You pressed: x=' + str(x) + ', y=' + str(y))
-    
-    # 6. Call the turtle .penup() method
-    
-    # 7. Move the turtle to a new location using .goto(x, y)
+    global times_clicked
+    times_clicked= times_clicked +1
+    if times_clicked==1:
+        times_clicked=0
+        my_turtle.pendown()
+    else:
+        my_turtle.penup()
 
+    print(times_clicked)
+    print('You pressed: x=' + str(x) + ', y=' + str(y))
+    #if times_clicked==2:
+
+    # 6. Call the turtle .penup() method
+    my_turtle.penup()
+    my_turtle.pendown()
+    # 7. Move the turtle to a new location using .goto(x, y)
+    my_turtle.goto(x, y)
 
 def turtle_clicked(x, y):
     print('turtle clicked!')
     
     # 8. Make a for loop to run the next instructions 3 times
-        
-        # 9. Make the turtle spin 360 degrees using the .right() method
-        
+    for i in range(4):
+
+     # 9. Make the turtle spin 360 degrees using the .right() method
+        my_turtle.right(40)
         # 10. Use the .color() method and getRandomColor() function to change
         # the color of the turtle,
         # myTurtle.color(get_random_color())
-
+        my_turtle.color(get_random_color())
 
 if __name__ == '__main__':
     window = turtle.Screen()
@@ -42,10 +54,11 @@ if __name__ == '__main__':
     my_turtle.pencolor('blue')
     # 4. Set and new width, length, and outline of our turtle
     #    my_turtle.turtlesize(stretch_wid=10, stretch_len=10, outline=4)
-    my_turtle.turtlesize(stretch_wid=20),
-    my
+    my_turtle.turtlesize(stretch_wid=10),
+    my_turtle.turtlesize(stretch_len=10)
+    my_turtle.turtlesize(outline=10)
     # 5. Uncomment the following line and replace 'my_turtle' with your turtle
-    # my_turtle.onclick(turtle_clicked)
+    my_turtle.onclick(turtle_clicked)
 
 # ===================== DO NOT EDIT THE CODE BELOW ============================
     window.onclick(screen_clicked)
