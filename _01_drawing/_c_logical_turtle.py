@@ -57,9 +57,9 @@ if __name__ == '__main__':
     my_turtle.pencolor('blue')
     # 4. Set and new width, length, and outline of our turtle
     #    my_turtle.turtlesize(stretch_wid=10, stretch_len=10, outline=4)
-    my_turtle.turtlesize(stretch_wid=10),
-    my_turtle.turtlesize(stretch_len=10)
-    my_turtle.turtlesize(outline=10)
+    my_turtle.turtlesize(stretch_wid=30),
+    my_turtle.turtlesize(stretch_len=30)
+    my_turtle.turtlesize(outline=30)
     # 5. Uncomment the following line and replace 'my_turtle' with your turtle
     my_turtle.onclick(turtle_clicked)
 
