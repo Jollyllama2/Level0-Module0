@@ -15,7 +15,7 @@ if __name__ == '__main__':
     # Print your message to the console using the print() function
     print("Hello world")
     # Show an error message using messagebox.showerror()
-    messagebox.showerror(title='Alert',message='lol you have been hacked give money lollllll')
+    messagebox.showerror(title='Alert',message=' you have been hacked give us your money and download website the hacked')
     # Run the window's .mainloop() method
     window.mainloop()
     pass

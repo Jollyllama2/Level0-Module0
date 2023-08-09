@@ -29,7 +29,7 @@ if __name__ == '__main__':
     # Set the turtle width to 1
     my_dog.turtlesize(stretch_wid=1)
     # Create a variable to hold the number of sides in a pentagon
-    sides=10
+    sides=5
     # Create a variable to be the angle of 360 divided by the sides variable
     angle=360/sides
     # Use a for loop to repeat ALL the following lines of code 360 times. 
@@ -48,7 +48,7 @@ if __name__ == '__main__':
         # Turn the turtle to the right by the angle variable + 1
         my_dog.right(angle+1)
     # Hide your turtle so you can see the pattern.
-    my_dog.hide
+    my_dog.hideturtle
     # Check the pattern against the picture in the recipe. If it matches, you are done!
     
     # Variations:
