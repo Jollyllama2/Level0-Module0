@@ -14,6 +14,6 @@ if __name__ == '__main__':
         messagebox.showinfo(title='hello', message=" you shall rule the world")
     else:
     # 3. Otherwise, tell them to sign up for classes at The League in an error box pop-up.
-        messagebox.showinfo(title='bruh',message='bro join the league')
+        messagebox.showinfo(title='bruh',message='bro just join the league')
     # Run the window's .mainloop() method
     window.mainloop()

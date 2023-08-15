@@ -28,6 +28,14 @@ if __name__ == '__main__':
     else:
         score=score
         messagebox.showinfo(title="hi",message="HOW ON EARTH DID YOU GET THAT ANSWER LIKE IT'S A METAPHOR FOR SOME THING THAT WILL NEVER HAPPEN ")
+
+        question = simpledialog.askstring(title='yo',prompt='can dogs talk?')
+    if question == "no":
+        score=score+1
+        messagebox.showinfo(title='yo',prompt="good job")
+    else:
+        score=score
+        messagebox.showinfo(title='hi',prompt='COME ON')
     # MAKE MORE QUESTIONS. Ask more questions by repeating the above 
     #      // Option: Subtract a point from their score for a wrong answer
  
