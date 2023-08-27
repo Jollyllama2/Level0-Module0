@@ -32,14 +32,15 @@ if __name__ == '__main__':
         question = simpledialog.askstring(title='yo',prompt='can dogs talk?')
     if question == "no":
         score=score+1
-        messagebox.showinfo(title='yo',prompt="good job")
+        messagebox.showinfo(title='yo',message="good job")
     else:
         score=score
-        messagebox.showinfo(title='hi',prompt='COME ON')
+        messagebox.showinfo(title='hi',message='COME ON')
     # MAKE MORE QUESTIONS. Ask more questions by repeating the above 
     #      // Option: Subtract a point from their score for a wrong answer
  
     # After all the questions have been asked, tell the user their final score
     # remember to convert your variable to a string using the str() function 
-    
+    messagebox.showinfo(title='score',message='good job! your score was'+ str(score))
     # Run the window's .mainloop() method
+    window.mainloop()
