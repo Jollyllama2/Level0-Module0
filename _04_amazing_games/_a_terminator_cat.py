@@ -70,7 +70,7 @@ if __name__ == '__main__':
     my_turtle=turtle.Turtle()
     # 4. Set the turtle color and pen color to red (or any color you want)
     #    using .color('red', 'red')
-    my_turtle.color('blue', 'blue')
+    my_turtle.color('red', 'red')
     # 5. Set the turtle width to 0 so no outlines are drawn
     my_turtle.width(0)
     # 6. Set the turtle speed to 0 (fastest)
